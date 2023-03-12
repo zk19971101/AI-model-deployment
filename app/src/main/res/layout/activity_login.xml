@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AI模型部署
+        \n
+        一、APP功能\n    1.打开相册——实现\n    2.使用相机——实现\n    3.实时监控——未实现
+        \n\n\n
+        二、部署模型\n    1.mobilenet_v3——完成\n    2.resnet18——完成
+        \n\n\n
+        三、部署加速\n    1.静态离线量化——未完成\n    2.L1剪枝——未完成\n    3.知识蒸馏——未完成\n\n首次运行时推理速度会较慢，模型输入尺寸为224*224"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="16dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.997"
+        tools:layout_editor_absoluteX="0dp"
+        >
+
+        <Button
+            android:id="@+id/gotoMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="打开主页" />
+
+        <Button
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="了解作者" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
